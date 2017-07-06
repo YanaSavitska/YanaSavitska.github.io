@@ -1,0 +1,47 @@
+@main_color: brown;
+@light_yellow: #EFECD8;
+@title_font: Impact;
+@main_font: Geneva, Arial, Helvetica, sans-serif;
+        
+header {height: 60px; width: 90%; text-align: center; left: 10px; margin: auto; background-color: @light_yellow;}
+img {vertical-align: middle}
+main {height: 600px; width: 90%; margin: auto; background-color: @light_yellow;}
+footer {height: 60px; width: 90%; text-align: center; left: 10px; margin: auto; background-color: @main_color; opacity: 0.8;}
+p, h2, form, h1{font-family: @main_font;}
+a {text-decoration: none; color: black;}
+fieldset {float: left; height: 90%; width: 90%;}
+a:hover {color: @main_color;}
+a:active {color: @main_color;}
+
+.header_1 {width: 99.2%; height: 50%; padding: 5px; background-color: @main_color; opacity: 0.8;}
+.header_2 {width: 99.2%; height: 50%; padding: 5px; background-color: @light_yellow;}
+.langua {width: 35%; height: 100%; float: left; top: 10px;}
+.log {width: 25%; height: 100%; left: 20px; float: right;}
+.title {font-family: @title_font; font-size: 25px; float: left;}
+.but {width: 125px;}
+.but_2 {width: 150px; height: 40px; background-color: #BCD5C6; cursor: pointer; border: solid #A0B3A8 1px; font-family: @title_font; font-size: 25px;}
+.close {float: right}
+.place {width: 350px;}
+	
+.pos {overflow: hidden;}
+.text {width: 35px; font-family: @title_font, sans-serif; font-size: 18px; color: @main_color; text-align: center;}
+.foot {color: white; padding: 30px 0 0 0; font-size: 18px; font-family: @main_font;}
+.main_1 {width: 95%; height: 20%; padding: 5px; margin: 5px; margin: auto;}
+.pos_2{ float: left; margin-left: 5%; }
+ 
+/* Приховуємо не потрібну мову */
+.en .ru, .ru .en {display: none;}
+.en .uk, .uk .en {display: none;}
+.uk .ru, .ru .uk {display: none;}
+.uk .en, .en .uk {display: none;}
+.ru .uk, .uk .ru {display: none;}
+.ru .en, .en .ru {display: none;}
+
+/*галерея*/
+#largeImg { border: solid 1px #ccc; width: 220px; height: 325px; padding: 5px; position: relative; left: 20%; }
+.thumbs img { border: solid 1px #ccc; width: 110px; height: 162.5px; padding: 4px; position: relative; left: 20%; }
+.thumbs img:hover { border-color: @main_color; }
+
+/*форма*/
+.b-popup {width:100%; height: 100%; background-color: rgba(0,0,0,0.5); overflow:hidden; position:fixed; top:0px; left: 0px;}
+.b-popup .b-popup-content {margin:40px auto 0px auto; width: 400px; height: 480px; padding:10px; background-color: #FFFFFF; border-radius:5px; box-shadow: 0px 0px 10px #000;}
